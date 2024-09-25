@@ -4,7 +4,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Min Open Trip</title>
     <link rel="stylesheet" href="css\styles.css">
  </head>
 
@@ -16,94 +16,163 @@
         <!-- Navigasi -->
         <nav>
             <a href="#section-home">Home</a>
-            <a href="#section-profile">Our Profile</a>
-            <a href="#section-portofolio"">Portofolio</a>
+            <a href="#section-profile">Our Top Trips</a>
+            <a href="#section-portofolio"">About Us</a>
             <a href="#section-contact">Contact Us</a>
         </nav>
     </header>
 
-    <hr />
 
     <main>
 
         <!-- Home -->
         <section id="section-home">
-            <header>
-                
-                <h1>Hi <span id="name">User</span> Welcome to my Website</h1>
-                <button id="tombol">Ganti Nama</button>
+            <header> 
+                <h1>Hi! <span id="name">User</span> Welcome to Min Trip</h1>
+                <button id="tombol">Change Name</button>
+                <h3>Best Tourist Guide There is!</h3>
             </header>
 
             <article>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
+                
                 
                 <!-- Photo Banner -->
                 <!-- <div class="photo-banner"></div> -->
                  <div>
                     <img class="img-slide"
-                    src="assets\banner.jpg" width="100%" height="500px"
+                    src="assets\banner.jpg"
                     />
                     <img class="img-slide"
-                    src="assets\banner2.jpg" width="100%" height="500px"
+                    src="assets\banner2.jpg"
                     />
                     <img class="img-slide"
-                    src="assets\banner3.jpg" width="100%" height="500px"
+                    src="assets\banner3.jpg"
                     />
-                    <button onclick="plusDivs(-1)">Previous</button>
-                    <button onclick="plusDivs(1)">Next</button>
+                 </div>
+
+                 <div>
+                    <button id="buttonSangar" class="buttonSangar" onclick="plusDivs(-1)">Previous</button>
+                    <button id="buttonSangar" class="buttonSangar" onclick="plusDivs(1)">Next</button>
+                    </button>
                  </div>
             </article>
         </section>
 
-        <hr />
-
         <!-- Our Profile -->
         <section id="section-profile">
             <header>
-                <h1>Our Profile</h1>
+                <h1>Our Top 3 Trips</h1>
             </header>
             <div class="profile-container">
                 <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 1</h4>
+                    <div class="profile-icon1"></div>
+                    <h4>Bromo</h4>
                 </div>
 
                 <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 2</h4>
+                    <div class="profile-icon2"></div>
+                    <h4>Semeru</h4>
                 </div>
 
                 <div>
-                    <div class="profile-icon"></div>
-                    <h4>Profile 3</h4>
+                    <div class="profile-icon3"></div>
+                    <h4>Rinjani</h4>
                 </div>
             </div>
         </section>
 
-        <hr />
 
         <!-- Portofolio -->
         <section id="section-portofolio">
             <header>
-                <h1>Portofolio</h1>
+                <h1>About Us</h1>
             </header>
+
+            <article>
+                <p>Min Trip is a passionate and experienced tourist guide based in Indonesia, specializing in showcasing the country's rich culture, 
+                    breathtaking landscapes, and vibrant cities. With years of experience in the tourism industry, Min Trip has developed an in-depth knowledge of Indonesia's hidden gems, 
+                    from the bustling markets of Jakarta to the serene beaches of Bali, and the lush rainforests of Kalimantan. Whether guiding groups through historical landmarks or leading adventurous hikes in the nation's most remote areas, 
+                    Min Trip ensures every tourist experiences the diversity and wonder of Indonesia.
+                </p>
+                
+                <p>
+                    Min Trip began working in tourism after falling in love with Indonesia’s cultural diversity and natural beauty. Through hard work and dedication, 
+                    Min Trip has become well-known among both locals and international tourists for offering personalized, engaging, and informative tours. Over the years, 
+                    Min Trip has expanded their expertise to cover everything from eco-tourism, cultural trips, and culinary tours to adventure and wildlife explorations. 
+                    This dynamic range of expertise has helped Min Trip build a reputation for creating unforgettable and enriching travel experiences.
+                </p>
+
+                <P>
+                    Min Trip believes in sustainable tourism, aiming to protect the environment and respect local cultures. 
+                    Every tour is designed to leave minimal impact while ensuring travelers connect with Indonesia in a meaningful way. Min Trip works closely with local communities, 
+                    promoting their traditions, and ensuring tourists have authentic experiences that go beyond just sightseeing.
+                </P>
+            
+            </article>
         </section>
 
-        <hr />
 
         <!-- Contact Us -->
-        <section id="section-contact">
+        <section>
             <header>
                 <h1>Contact Us</h1>
             </header>
 
-            <div>
-                <form action="">
-                    <input type="text" placeholder="nama anda" id="name-input">
-                    <p id="error-name"></p>
-                    <button id="submit">Kirim</button>
-                </form>
-            </div>
+            <article id="section-contact">
+                <div>
+                    <form name="form" id="myForm">
+                        <label for="nama">Name:</label>
+                        <input type="text" id="nama" name="nama" >
+                    
+                        <label for="tanggal_lahir">Birth Date:</label>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir" >
+                    
+                        <label>Gender:</label>
+                        <label>
+                            <input type="radio" id="lanang" name="gender" value="Male" > Male
+                        </label>
+                        <label>
+                            <input type="radio" id="cwk" name="gender" value="Female" > Female
+                        </label>
+                    
+                        <label for="pesan">Message:</label>
+                        <textarea id="pesan" name="pesan" ></textarea>
+                        <p id="error"></p>
+                        <div class="box">
+                            <input class="buttonSuangar" type="submit" id="submit" name="submit" value="Submit">
+                            <div class="space">
+                                <span style="--i: 31" class="star"></span>
+                                <span style="--i: 12" class="star"></span>
+                                <span style="--i: 57" class="star"></span>
+                                <span style="--i: 93" class="star"></span>
+                                <span style="--i: 23" class="star"></span>
+                                <span style="--i: 70" class="star"></span>
+                                <span style="--i: 6" class="star"></span>
+                              </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="kotak">
+                    <h1>Form Result</h1>
+                    <div class="isi-form">
+                        
+                        <div id="isi1">
+                            <p>Name</p>
+                            <p>Birth Date</p>
+                            <p>Gender</p>
+                            <p>Message</p>
+                        </div>
+
+                        <div>
+                            <p>&nbsp;: <span id="displayNama"></span></p>
+                            <p>&nbsp;: <span id="displayTanggal"></span></p>
+                            <p>&nbsp;: <span id="displayGender"></span></p>
+                            <p>&nbsp;: <span id="displayPesan"></span></p>
+                        </div>
+                    </div>
+                </div>   
+            </article>
+
         </section>
 
     </main>
