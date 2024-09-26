@@ -48,7 +48,7 @@ nav>a {
 .logo-icon {
     height: 50px;
     width: 50px;
-    background-image: url(https://img.freepik.com/free-photo/astronaut-wearing-space-suit-earth_23-2151650707.jpg?ga=GA1.1.1859752017.1727249312);
+    background-image: url(../assets/logo.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
