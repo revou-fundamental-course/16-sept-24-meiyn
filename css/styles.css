@@ -8,8 +8,13 @@
     align-items: center;
 }
 
+body {
+  background-color: beige;
+}
+
 body  > header {
-    background-color: lightgray;
+    border-style: solid;
+    background-color: beige;
 }
 
 #section-home >header > h1, h3{
